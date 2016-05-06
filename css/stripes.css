@@ -1,0 +1,137 @@
+.colorsblock{
+    
+    transition: background 0.6s ease-in-out;
+  }
+.colorset-one {
+  background: repeating-linear-gradient(
+    -45deg,
+    #9CDDC8,
+    #9CDDC8 300px,
+    #0AABBA 300px,
+    #0AABBA 600px,
+    #400403 600px,
+    #400403 900px,
+    #FE0557 900px,
+    #FE0557 1200px,
+    #FE8B05 1200px,
+    #FE8B05 1500px,
+    #EFEECC 1500px,
+    #EFEECC 1800px,
+    #ffffff 1800px,
+    #ffffff 2100px
+    );
+  }
+  .colorset-two {
+    background: repeating-linear-gradient(
+      -45deg,
+      #f9ffa2,
+      #f9ffa2 300px,
+      #aafd6d 300px,
+      #aafd6d 600px,
+      #00e2c5 600px,
+      #00e2c5 900px,
+      #00a7a8 900px,
+      #00a7a8 1200px,
+      #312633 1200px,
+      #312633 1500px,
+      #ff6b6b 1500px,
+      #ff6b6b 1800px,
+      #ffffff 1800px,
+      #ffffff 2100px
+      );
+    }
+    .colorset-three {
+      background: repeating-linear-gradient(
+        -45deg,
+        #FF8A00,
+        #FF8A00 300px,
+        #FABE28 300px,
+        #FABE28 600px,
+        #FF9C97 600px,
+        #FF9C97 900px,
+        #FFBA7F 900px,
+        #FFBA7F 1200px,
+        #FAD3B2 1200px,
+        #FAD3B2 1500px,
+        #EEE9E5 1500px,
+        #EEE9E5 1800px,
+        #FFE181 1800px,
+        #FFE181 2100px
+        );
+      }
+      .colorset-four {
+        background: repeating-linear-gradient(
+          -45deg,
+          #EDEBE6,
+          #EDEBE6 300px,
+          #D6E1C7 300px,
+          #D6E1C7 600px,
+          #94C7B6 600px,
+          #94C7B6 900px,
+          #403B33 900px,
+          #403B33 1200px,
+          #D3643B 1200px,
+          #D3643B 1500px,
+          #9DC9AC 1500px,
+          #9DC9AC 1800px,
+          #FFFEC7 1800px,
+          #FFFEC7 2100px
+          );
+        }
+        .colorset-five {
+          background: repeating-linear-gradient(
+            -45deg,
+            #1F0310,
+            #1F0310 300px,
+            #442433 300px,
+            #442433 600px,
+            #A3D95B 600px,
+            #A3D95B 900px,
+            #AAE3AB 900px,
+            #AAE3AB 1200px,
+            #F6F0BC 1200px,
+            #F6F0BC 1500px,
+            #BCBDAC 1500px,
+            #BCBDAC 1800px,
+            #CFBE27 1800px,
+            #CFBE27 2100px
+            );
+          }
+          .colorset-six {
+            background: repeating-linear-gradient(
+              -45deg,
+              #E5F04C,
+              #E5F04C 300px,
+              #C0D23E 300px,
+              #C0D23E 600px,
+              #FF6E27 600px,
+              #FF6E27 900px,
+              #F34739 900px,
+              #F34739 1200px,
+              #D90F5A 1200px,
+              #D90F5A 1500px,
+              #991766 1500px,
+              #991766 1800px,
+              #331327 1800px,
+              #331327 2100px
+              );
+            }
+            .colorset-seven {
+              background: repeating-linear-gradient(
+                -45deg,
+                #9DE0AD,
+                #9DE0AD 300px,
+                #547980 300px,
+                #547980 600px,
+                #F7EFA2 600px,
+                #F7EFA2 900px,
+                #FFC897 900px,
+                #FFC897 1200px,
+                #BAC99A 1200px,
+                #BAC99A 1500px,
+                #75C9A3 1500px,
+                #75C9A3 1800px,
+                #42393B 1800px,
+                #42393B 2100px
+                );
+              }
