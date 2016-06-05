@@ -28,7 +28,7 @@ import 'css/zenburn.css'
 export default class Index extends React.Component {
   constructor(props){
     super(props);
-
+    debugger;
     this.sortedPages = _.sortBy(props.route.pages,
       (page) => access(page, 'data.date')
     ).reverse()
@@ -46,6 +46,8 @@ export default class Index extends React.Component {
 
     this.handleResize = this.handleResize.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
+
+
   }
 
   handleSectionOpen(e){
@@ -58,7 +60,8 @@ export default class Index extends React.Component {
 
 
   componentDidMount() {
-    window.isMobile = window.mobilecheck();
+    Navigator.goToHash(1000, ['home']);
+    window.isMobile = mobilecheck();
 
     this.setState({
       windowWidth: window && window.innerWidth,
@@ -73,10 +76,15 @@ export default class Index extends React.Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
   handleResize(e){
-    this.setState({
-      windowWidth: window && window.innerWidth,
-      windowHeight: window && window.innerHeight,
-    });
+    var newDimensions = {
+      windowWidth:  window && window.innerWidth,
+    };
+
+    if(window.isMobile) {
+      newDimensions.windowHeight= this.state.windowHeight || (window && window.innerHeight)
+    }
+
+    this.setState(newDimensions);
   }
   handleScroll(event) {
     // let urlId = '#/'+(this.props.anchor_name || this.props.parentName);
@@ -121,7 +129,7 @@ export default class Index extends React.Component {
             onProjectOpen={this.handleSectionOpen.bind(this)}/>
         },
       {
-        section: 'about_me',
+        section: 'about-me',
         component: <AboutMe
             className='color-three about'
             {... this.state }

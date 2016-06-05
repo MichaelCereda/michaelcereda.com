@@ -60,6 +60,7 @@ class ScrollHelper{
 class Navigator {
   static load(sitemap){
     this.scrollHelper = new ScrollHelper();
+
   }
   static genId(arr){
     return arr.map((item)=>{
@@ -79,12 +80,23 @@ class Navigator {
     history.replaceState(null, null, urlId);
     return urlId;
   }
+  static goToHash(timeout, exclude){
+    let _hash = window.location.hash.substr(1);
+    if(exclude.indexOf(_hash)!==-1) return;
+    setTimeout(()=>{
+      Navigator.scrollTo(_hash);
+    }, timeout)
+
+
+  }
 
   static scrollTo(section_name){
 
     return new Promise((resolve,reject)=>{
 
-      var endlocation = window.pageYOffset + document.getElementById(section_name).getBoundingClientRect().top;
+      var endlocation = window.pageYOffset
+                        + document.getElementById(section_name).getBoundingClientRect().top
+                        + 1;
       this.scrollHelper.startAnimateScroll(endlocation, resolve);
     });
 

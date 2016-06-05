@@ -84,7 +84,7 @@ IMG, P{margin:0}
   .section-subtitle{
     margin-top: 10px;
     font-size:0.7em;
-     font-weight:200
+      font-weight:300
   }
   .section-menu-item{
     position: absolute;
@@ -236,6 +236,7 @@ section{
 }
 
 .media-element{
+  max-width: 50%;
   &.right{
     float: right;
     margin-left: 10px;
@@ -246,10 +247,12 @@ section{
   &.center{
     display: block;
     margin: 0 auto;
+    max-width: 100%;
   }
 
   @media (max-width: 800px) {
       display: block;
+      max-width: 100% !important;
       margin: 0 auto !important;
       float: none !important;
   }

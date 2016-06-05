@@ -106,15 +106,16 @@ line-height: 1.5rem;
 }
 
 
-</style><link rel="stylesheet" href="/styles.css"/></head><body><div id="react-mount"><div class="site-container" data-reactroot="" data-reactid="1" data-react-checksum="-712146576"><div class="markdown" data-reactid="2"><h1 data-reactid="3">Café Barbera</h1><div data-reactid="4"><hr>
-<p>Café Barbera is a mobile application created to improve the brand awareness and
-encourage consumer to be more loyal, with rewards, special offers and so on.</p>
+</style><link rel="stylesheet" href="/styles.css"/></head><body><div id="react-mount"><div class="site-container" data-reactroot="" data-reactid="1" data-react-checksum="-224472051"><div class="markdown" data-reactid="2"><h1 data-reactid="3">Café Barbera</h1><div data-reactid="4"><hr>
+<p>Café Barbera is a mobile application created to improve the brand awareness of Café Barbera, an international coffee houses franchise.
+It encourages consumer loyalty with rewards, special offers and indirect marketing promotions.</p>
 <p>It’s currently used in production by all the shops of the Café Barbera franchise.</p>
 <p>I built the whole infrastructure starting from scratch using mainly <strong>Javascript</strong>
 and a little bit of Native Code.</p>
-<p>One great aspect about using <strong>React</strong> both on backend and Mobile app is the possibility of re-using parts of code and logic.
-To help myself to mantain unique modules with reusable funcionalities I created a private <strong>Sinopia</strong> server, that allows me to</p>
+<p>The Mobile Application has been made using <strong>React Native</strong> while the backend has been created using <strong>React</strong>, this allows partial code recycling and helps avoid code repetition through the creation of modules with unique functionalities.
+To maintain this modules I manage a private <strong>Sinopia</strong> server.</p>
 <h2 id="cafe-barbera-server-side">Server-side</h2>
+<img src='assets/projects/CafeBarberaRequestDiagram.png' class='media-element right' />
 <p>One of the main challenges in building an app used worldwide is scalability
 and handling usage peaks without causing any interruption.</p>
 <p>Café Barbera has 600 shops worldwide with an average of 500-1000 customers per day.<br>
@@ -129,17 +130,17 @@ Static files are delivered by a specialized CDN.</p>
 I used <strong>Alt</strong> as <strong>Flux</strong> implementation and <strong>Material UI</strong> to provide nice and interesting components that can make the view pleasant to use.</p>
 <h2 id="cafe-barbera-mobile-app">Mobile App</h2>
 <iframe class='media-element right' width="420" height="730" src="https://www.youtube.com/embed/B0ukQt7qktc" frameborder="0" allowfullscreen></iframe>
-<p>The app has been created using <strong>React Native</strong>, that allows to port on both <strong>Android</strong> and <strong>IOS</strong> without problems.</p>
+<p>The app has been created using <strong>React Native</strong>, that simplifies the porting on both <strong>Android</strong> and <strong>IOS</strong>.</p>
 <h3 id="cafe-barbera-user-interface">User interface</h3>
 <p>I started the creation of the UI with the idea that the app should immediate and
 hassle free, serving the user while in the shop and providing useful information
 and push notifications while outside.</p>
 <p>The app is composed by three views, Home, ShopList and ShopDetail.<br>
-The UI must be clean and straightfoward, eveything must provide feedback when touched.</p>
+The UI must be clean and straightforward and everything must provide the expected feedback.</p>
 <p><strong>Home</strong> is where the user receives Messages, Offers and Rewards created specifically for him
 (or for the cluster of users with similar ‘interests’).</p>
-<p><strong>Shoplist</strong> contains the list of the shops sorted by distance from the user, if the user already collected points from a shop, the shop appears bigger and shows the points.</p>
+<p><strong>Shoplist</strong> contains the list of the shops sorted by distance from the user. If the user already collected points from a shop, the shop appears bigger and shows the points.</p>
 <p><strong>ShopDetail</strong> is the customized page for the shop, it contains offers, messages and rewards created by the shop administrator.<br>
 The sections in this view are dynamic, they disappear if the section is empty in order to avoid any visual impediment and help the user to browse all the information.</p>
-<p>When clicking on a card a modal window is displayed, showing the related buttons</p>
+<p>When clicking on a card a modal window is displayed, showing the related actions.</p>
 </div></div></div></div><script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script><script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script><script src="/bundle.js"></script></body></html>

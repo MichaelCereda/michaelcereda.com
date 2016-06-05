@@ -11,8 +11,7 @@ icon: ghost
 
 ## Nice meeting you
 
-I'm always fascinated by everything I don't know and by new challenges, especially
-working with cutting-edge technologies.
+I'm always fascinated by new challenges, specially if related to cutting-edge technologies.
 
 I find myself at the intersection between __creativity__ and __logic__, solving problems
 with a fresh and multidisciplinary approach.
