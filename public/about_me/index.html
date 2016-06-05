@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0"/><title></title><link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png"/><link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/><link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192"/><link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/><link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/><link rel="manifest" href="/manifest.json"/><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/><meta name="msapplication-TileColor" content="#da532c"/><meta name="msapplication-TileImage" content="/mstile-144x144.png"/><style id="typography.js">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+html {
+  box-sizing: border-box;
+  font-size: 112.5%;
+  line-height: 1.5em;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: hsl(0,0%,15%);
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dl,dd,p,figure,pre,table,fieldset,blockquote,form,noscript,iframe,img,hr {
+margin: 0;
+margin-bottom: 1.5rem;
+padding: 0;
+}
+
+blockquote {
+margin: 1.5rem 3.75rem;
+}
+
+b,strong {
+font-weight: 600
+}
+
+hr {
+background: hsl(0,0%,80%);
+border: none;
+height: 1px;
+margin-bottom: calc(1.5rem - 1px);
+}
+
+ol,ul {
+list-style-position: outside;
+margin-left: 1.5rem;
+}
+
+ul li,ol li {
+padding-left: 0;
+}
+
+code,kbd,pre,samp {
+font-size: 0.85rem;
+line-height: 1.5rem;
+}
+
+table {
+font-size: 1rem;
+line-height: 2.25rem;
+width: 100%;
+}
+
+thead {
+text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color: hsl(0,0%,20%);
+font-family: "Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+font-weight: 600;
+}
+
+h1 {
+font-size: 1.728rem;
+line-height: 2.25rem;
+}
+
+h2 {
+font-size: 1.44rem;
+line-height: 2.25rem;
+}
+
+h3 {
+font-size: 1.2rem;
+line-height: 1.5rem;
+}
+
+h4 {
+font-size: 1.12924rem;
+line-height: 1.5rem;
+}
+
+h5 {
+font-size: 1.06266rem;
+line-height: 1.5rem;
+}
+
+h6 {
+font-size: 1rem;
+line-height: 1.5rem;
+}
+
+
+</style><link rel="stylesheet" href="/styles.css"/></head><body><div id="react-mount"><div class="site-container" data-reactroot="" data-reactid="1" data-react-checksum="-1119135590"><div class="markdown" data-reactid="2"><h1 data-reactid="3">About me</h1><div data-reactid="4"><h2 id="about-me-nice-meeting-you">Nice meeting you</h2>
+<p>I’m always fascinated by everything I don’t know and by new challenges, especially
+working with cutting-edge technologies.</p>
+<p>I find myself at the intersection between <strong>creativity</strong> and <strong>logic</strong>, solving problems
+with a fresh and multidisciplinary approach.</p>
+<p>My world became made of code long before I started shaving. In the last <strong>13 years</strong> <em>of my freelance career</em>, I have developed in a multitude of programming languages starting from C to python, ruby and javascript.</p>
+<p>I’m more than just a full-stack developer, I’m a graphic designer and
+I love to create user interfaces.</p>
+<p>My hobbies are video editing, music composing and photography.</p>
+<p>I’m a full-time freelancer, always looking for new challenges and inspiring projects.</p>
+<h2 id="about-me-skills">Skills</h2>
+<ul>
+<li>Project Management and planning.</li>
+<li>Client-side and server-side development.</li>
+<li>UI/UX Blueprinting and Design.</li>
+<li>Linux server setup and administration.</li>
+<li>Graphic/Logo Design.</li>
+<li>Version control, automated testing/build/deployment.</li>
+<li>Video editing and animation.</li>
+<li>Music composing.</li>
+</ul>
+<p>I’m currently developing in <strong>Javascript</strong>, <strong>React</strong>, <strong>React Native</strong> and <strong>NodeJS</strong>
+creating APIs, Backends, Front-ends, and mobile applications.
+I love <strong>HTML5</strong>, and <strong>CSS3</strong>/<strong>Less</strong> that i use to make very cool and responsive UI.</p>
+<p><strong>MongoDB</strong>, <strong>Redis</strong>, <strong>GraphQL</strong> and a bunch of <strong>Relational Databases</strong> are always in my mind and at the tip of my fingertips.</p>
+<p>I have also a good knowledge of <strong>PHP</strong>, <strong>Angular.js</strong>, <strong>Python</strong>, and I have no problem dealing with other languages such as  <strong>Java</strong>, <strong>C/C++/C#</strong>, <strong>LUA</strong>, etc.</p>
+<p>I think that a programming language is just a tool in one’s toolbox,
+one has to pick the right tool for the job; you
+can’t repair a car using just a screwdriver ;)</p>
+<p>Always experimenting, always learning, never bored.</p>
+</div></div></div></div><script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script><script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js"></script><script src="/bundle.js"></script></body></html>

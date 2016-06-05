@@ -1,0 +1,31 @@
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="331.9px" height="319.8px" viewBox="0 0 331.9 319.8" style="enable-background:new 0 0 331.9 319.8;"
+	 xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#7FD093;}
+	.st1{display:none;fill:none;}
+	.st2{fill:none;stroke:#7FD093;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<defs>
+	<symbol  id="elector" viewBox="-13 -12.5 26 25">
+		<g id="XMLID_20_">
+			<g id="XMLID_80_">
+				<path id="XMLID_81_" class="st0" d="M0,12.5c-6.9,0-12.5-5.6-12.5-12.5c0-6.9,5.6-12.5,12.5-12.5S12.5-6.9,12.5,0
+					C12.5,6.9,6.9,12.5,0,12.5z M0-10.4c-5.8,0-10.4,4.7-10.4,10.4c0,5.8,4.7,10.4,10.4,10.4S10.4,5.8,10.4,0
+					C10.4-5.8,5.8-10.4,0-10.4z"/>
+			</g>
+		</g>
+		<path id="XMLID_19_" class="st0" d="M7.4,0c0-4.1-3.3-7.4-7.4-7.4S-7.4-4.1-7.4,0S-4.1,7.4,0,7.4S7.4,4.1,7.4,0z"/>
+		<polygon id="XMLID_21_" class="st1" points="-13,12 13,12 13,-12 -13,-12 		"/>
+	</symbol>
+</defs>
+<circle id="XMLID_33_" class="st2" cx="172" cy="159.9" r="132.3"/>
+<use xlink:href="#elector"  width="26" height="25" id="XMLID_32_" x="-13" y="-12.5" transform="matrix(1 0 0 -1 292 57.9143)" style="overflow:visible;"/>
+<use xlink:href="#elector"  width="26" height="25" id="XMLID_31_" x="-13" y="-12.5" transform="matrix(1 0 0 -1 138 32.9143)" style="overflow:visible;"/>
+<use xlink:href="#elector"  width="26" height="25" id="XMLID_30_" x="-13" y="-12.5" transform="matrix(1 0 0 -1 13 167.9143)" style="overflow:visible;"/>
+<use xlink:href="#elector"  width="26" height="25" id="XMLID_29_" x="-13" y="-12.5" transform="matrix(1 0 0 -1 172 291.9142)" style="overflow:visible;"/>
+<use xlink:href="#elector"  width="26" height="25" id="XMLID_28_" x="-13" y="-12.5" transform="matrix(1 0 0 -1 299 256.9142)" style="overflow:visible;"/>
+<circle id="XMLID_27_" class="st2" cx="172" cy="159.9" r="158.9"/>
+</svg>

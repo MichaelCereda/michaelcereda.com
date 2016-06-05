@@ -1,88 +1,54 @@
 ---
-title: I'm a markdown file!
+title: About me
+subtitle: >
+  I'm going to keep it
+
+  short, I promise
+icon: ghost
+
 ---
 
-Markdown is pretty cool if you ask me.
 
-## You can have lists
+## Nice meeting you
 
-### Numbered
-1. me first!
-2. I'm second!
-3. third :(
+I'm always fascinated by everything I don't know and by new challenges, especially
+working with cutting-edge technologies.
 
-### Unordered
-* Cheese
-* is actually
-* really good
+I find myself at the intersection between __creativity__ and __logic__, solving problems
+with a fresh and multidisciplinary approach.
 
-And **lots** of other *fun* stuff.
+My world became made of code long before I started shaving. In the last __13 years__ _of my freelance career_, I have developed in a multitude of programming languages starting from C to python, ruby and javascript.
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+I'm more than just a full-stack developer, I'm a graphic designer and
+I love to create user interfaces.
 
-## Enable additional syntax with Markdown-it plugins
+My hobbies are video editing, music composing and photography.
 
-You can add additional Markdown-it plugins with
-[a custom markdown loader](https://github.com/gatsbyjs/gatsby-starter-default/blob/master/loaders/markdown-loader/index.js#L22-L32).
+I'm a full-time freelancer, always looking for new challenges and inspiring projects.
 
-### Subscript
-H~2~0
+## Skills
 
-### Footnote
-Here is an inline note.^[Inlines notes are easier to write, since
-you don't have to pick an identifier and move down to type the
-note.]
+ - Project Management and planning.
+ - Client-side and server-side development.
+ - UI/UX Blueprinting and Design.
+ - Linux server setup and administration.
+ - Graphic/Logo Design.
+ - Version control, automated testing/build/deployment.
+ - Video editing and animation.
+ - Music composing.
 
-### Definition lists
-Term 1
+I'm currently developing in __Javascript__, __React__, __React Native__ and __NodeJS__
+creating APIs, Backends, Front-ends, and mobile applications.
+I love __HTML5__, and __CSS3__/__Less__ that i use to make very cool and responsive UI.
 
-:   Definition 1
+[//]: # (I should also mention that I use on a daily basis __MongoDB__, __Redis__, __GraphQL__ and a bunch of __Relational Databases__.)
 
-Term 2 with *inline markup*
+__MongoDB__, __Redis__, __GraphQL__ and a bunch of __Relational Databases__ are always in my mind and at the tip of my fingertips.
 
-:   Definition 2
+I have also a good knowledge of __PHP__, __Angular.js__, __Python__, and I have no problem dealing with other languages such as  __Java__, __C/C++/C#__, __LUA__, etc.
 
-        { some code, part of Definition 2 }
+I think that a programming language is just a tool in one's toolbox,
+one has to pick the right tool for the job; you
+can't repair a car using just a screwdriver ;)
 
-    Third paragraph of definition 2.
-
-### Abbriviation
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
-The HTML specification
-is maintained by the W3C.
-
-### Add a class or other attributes to content.
-here be dragons {.warning}
-
-## Some code
-
-Javascript
-```javascript
-function $initHighlight(block, flags) {
-  try {
-    if (block.className.search(/\bno\-highlight\b/) != -1)
-      return processBlock(block, true, 0x0F) + ' class=""';
-  } catch (e) {
-    /* handle exception */
-  }
-  for (var i = 0 / 2; i < classes.length; i++) { // "0 / 2" should not be parsed as regexp
-    if (checkCondition(classes[i]) === undefined)
-      return /\d+/g;
-  }
-}
-```
-
-Python
-```python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-```
+Always experimenting, always learning, never bored.

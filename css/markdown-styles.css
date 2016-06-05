@@ -7,3 +7,15 @@
   content:'\26A0';
   margin-right: 9px;
 }
+
+h2, h3{
+  margin-top: 20px;
+  margin-bottom: 5px;
+
+}
+h2{
+  clear: both;
+}
+p{
+  margin-bottom: 10px
+}

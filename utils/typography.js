@@ -4,7 +4,7 @@ const options = {
   baseFontSize: '18px',
   baseLineHeight: '27px',
   headerFontFamily: '"Avenir Next", "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif',
-  bodyFontFamily: 'georgia, serif',
+  bodyFontFamily: 'Lato, Helvetica, Arial, sans-serif',
   bodyWeight: 300,
   headerWeight: 600,
   boldWeight: 600,
@@ -13,9 +13,9 @@ const options = {
       scale: 'minor third',
     },
   ],
-  "headerGray": 100,
+  "headerGray": 20,
     "headerGrayHue": 0,
-    "bodyGray": 95,
+    "bodyGray": 15,
     "bodyGrayHue": 0,
 }
 

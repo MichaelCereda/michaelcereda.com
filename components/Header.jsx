@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router'
-
+var _ = require('lodash');
 import {Menu} from './Menu.jsx'
 import { prefixLink } from 'gatsby-helpers'
 import Headroom from 'react-headroom'

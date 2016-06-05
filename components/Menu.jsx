@@ -5,6 +5,8 @@ var _ = require('lodash');
 
 import {Motion, spring, presets} from 'react-motion';
 
+import {Navigator} from '../utils/navigator.js';
+
 export class Menu extends React.Component{
   constructor(props){
     super(props);
@@ -14,7 +16,12 @@ export class Menu extends React.Component{
     }
   }
   toggleMenu(){
-    this.setState({isOpen:!this.state.isOpen});
+    if(this.props.closeSection){
+      this.props.onCloseSectionClick && this.props.onCloseSectionClick();
+    } else {
+      this.setState({isOpen:!this.state.isOpen});
+    }
+
 
   }
   render(){
@@ -26,8 +33,30 @@ export class Menu extends React.Component{
     var styles = _.cloneDeep(this.constructor.styles);
     let hoverStyle = {};
     if (this.state.isHover) hoverStyle = styles.containerHover;
-    return <Motion defaultStyle={{x: (this.state.isOpen)?styles.container.height:150}}
-      style={{x: spring((this.state.isOpen)? 150 : styles.container.height, presets.wobbly)}}>
+
+    if(this.props.closeSection){
+      styles.container.backgroundColor = '#c72020';
+      styles.container.left='inherit';
+      styles.container.right=10;
+    }
+
+    let menuItems = this.props.sections.map((item, i)=>{
+
+      return <div
+        className='menu-item'
+        style={styles.link} key={i}
+        onClick={(section_name=>(e)=>{
+          Navigator.scrollTo(section_name);
+          e.preventDefault();
+        })(item.section)}
+        >
+          <i className={'icon-'+item.component.props.icon}/>
+
+      </div>
+    });
+    
+    return <Motion defaultStyle={{x: styles.container.height}}
+      style={{x: spring((this.state.isOpen)? this.props.sections.length*52 : styles.container.height, presets.wobbly)}}>
       {value =>
         <div
           style={{
@@ -39,22 +68,21 @@ export class Menu extends React.Component{
           onMouseOver={()=>{this.setState({isHover:true})}}
           onMouseOut={()=>{this.setState({isHover:false})}}
           >
-          <div style={styles.toggleButton}>
-            <i className='icon-menu' style={styles.icon} />
+          <div style={{...styles.toggleButton,marginTop:(this.props.closeSection)?3:7}}>
+            {(this.props.closeSection)?
+              <i className='icon-close'
+                style={{color: 'white', fontSize:30}} />
+              :
+              <i className='icon-menu' style={styles.icon} />
+            }
+
           </div>
           {
             (this.state.isOpen)?
-            <div style={styles.link}>
-              <Link
-                to={prefixLink('/')}
-                style={{
-                  color: 'black',
-                  textDecoration: 'none',
-                }}
-                >
-                <i className='icon-briefcase' style={styles.icon} />
-              </Link>
+            <div className='menu-items'>
+              {menuItems}
             </div>
+
             :null
           }
         </div>
@@ -72,7 +100,7 @@ Menu.styles = {
     height:65,
     borderRadius: 50,
     position:'fixed',
-    top: 20, right: 20,
+    top: 20, left: 20,
     zIndex: 20,
     boxShadow: '5px 5px 10px rgba(24, 24, 24, 0.50)',
     padding: 15,
@@ -91,15 +119,16 @@ Menu.styles = {
   toggleButton:{
     marginTop:7,
     cursor: 'pointer',
-    
+    marginBottom:5,
     // marginBottom: 5
   },
   icon:{
-    color: 'white',
     fontSize: 22,
-    marginTop:7
+    marginTop:7,
+    color:'white'
   },
   link:{
-    marginTop:15,
+    marginBottom:10,
+    marginTop:10,
   }
 }
