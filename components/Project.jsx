@@ -46,7 +46,7 @@ export class Project extends React.Component{
   }
   handleClick(e){
     //this.props.onClick(e, this.props.data);
-    let { url } = this.props.data;
+    let { url, title } = this.props.data;
 
     if(url) {
       ga('send', 'event', {
@@ -59,9 +59,17 @@ export class Project extends React.Component{
       var win = window.open(url, '_blank');
       win.focus();
         return ;
+    }else {
+      ga('send', 'event', {
+        eventCategory: 'Open Project',
+        eventAction: 'click',
+        eventLabel: title
+      });
+
+      this.props.onClick(e, {id:this.props.id, ...this.props.data})
     }
 
-    this.props.onClick(e, {id:this.props.id, ...this.props.data})
+
 
   }
   handleMouseEnter(e){
