@@ -81,7 +81,9 @@ export default class Index extends React.Component {
     };
 
     if(window.isMobile) {
-      newDimensions.windowHeight= this.state.windowHeight || (window && window.innerHeight)
+      newDimensions.windowHeight = this.state.windowHeight || (window && window.innerHeight)
+    } else {
+      newDimensions.windowHeight = (window && window.innerHeight);
     }
 
     this.setState(newDimensions);

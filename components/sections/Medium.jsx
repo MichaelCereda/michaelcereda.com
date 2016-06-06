@@ -122,7 +122,7 @@ export class Medium extends React.Component{
   }
 
   componentDidMount(){
-    fetch('http://test.michaelcereda.com/scrapers/medium.php')
+    fetch('https://michaelcereda.com/scrapers/medium.php')
     .then((res)=>{
       return res.json();
     }).
@@ -142,11 +142,14 @@ export class Medium extends React.Component{
       stories = <h3>I can't contact medium right now, try refreshing the page</h3>;
       storiesContainer = {
           position : 'absolute',
-          top : '50%',
+          top : 0,
+          bottom : 0,
           padding: '5em',
           paddingRight: '5em',
           textAlign:'center',
-          color: '#525252'
+          color: '#525252',
+          display: 'flex',
+          alignItems: 'center'
       };
 
 
@@ -164,7 +167,7 @@ export class Medium extends React.Component{
       }
       scollableBgColor='#FAFAFA'
       >
-      <div style={{padding:10, display:'flex',...storiesContainer}}>
+      <div style={{padding:10, display:'flex', flexDirection:'column', ...storiesContainer}}>
       { stories }
       </div>
     </Section>)

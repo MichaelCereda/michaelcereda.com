@@ -9,10 +9,10 @@ icon: mustache
 
 ## Get in touch
 
-I can't wait to hear about which amazing project we are going to do together.
+I can't wait to hear about the amazing project we are going to do together.
 
 You can send me an email at
-<a href="mailto:me@michaelcereda.com">me@michaelcereda.com</a>
+<a href="mailto:me@michaelcereda.com">__me@michaelcereda.com__</a>
 
 ## Social Profiles
 

@@ -54,7 +54,7 @@ export class Menu extends React.Component{
 
       </div>
     });
-    
+
     return <Motion defaultStyle={{x: styles.container.height}}
       style={{x: spring((this.state.isOpen)? this.props.sections.length*52 : styles.container.height, presets.wobbly)}}>
       {value =>
@@ -71,7 +71,7 @@ export class Menu extends React.Component{
           <div style={{...styles.toggleButton,marginTop:(this.props.closeSection)?3:7}}>
             {(this.props.closeSection)?
               <i className='icon-close'
-                style={{color: 'white', fontSize:30}} />
+                style={styles.icon}/>
               :
               <i className='icon-menu' style={styles.icon} />
             }

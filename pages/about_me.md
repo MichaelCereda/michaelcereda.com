@@ -11,7 +11,7 @@ icon: ghost
 
 ## Nice meeting you
 
-I'm always fascinated by new challenges, specially if related to cutting-edge technologies.
+I'm always fascinated by new challenges, especially when it comes to cutting-edge technologies.
 
 I find myself at the intersection between __creativity__ and __logic__, solving problems
 with a fresh and multidisciplinary approach.
@@ -21,7 +21,7 @@ My world became made of code long before I started shaving. In the last __13 yea
 I'm more than just a full-stack developer, I'm a graphic designer and
 I love to create user interfaces.
 
-My hobbies are video editing, music composing and photography.
+My hobbies include video editing, music composing and photography.
 
 I'm a full-time freelancer, always looking for new challenges and inspiring projects.
 
@@ -38,16 +38,13 @@ I'm a full-time freelancer, always looking for new challenges and inspiring proj
 
 I'm currently developing in __Javascript__, __React__, __React Native__ and __NodeJS__
 creating APIs, Backends, Front-ends, and mobile applications.
-I love __HTML5__, and __CSS3__/__Less__ that i use to make very cool and responsive UI.
-
-[//]: # (I should also mention that I use on a daily basis __MongoDB__, __Redis__, __GraphQL__ and a bunch of __Relational Databases__.)
+I love __HTML5__, and __CSS3__/__Less__ which I use to make very cool and responsive UI.  
 
 __MongoDB__, __Redis__, __GraphQL__ and a bunch of __Relational Databases__ are always in my mind and at the tip of my fingertips.
 
 I have also a good knowledge of __PHP__, __Angular.js__, __Python__, and I have no problem dealing with other languages such as  __Java__, __C/C++/C#__, __LUA__, etc.
 
-I think that a programming language is just a tool in one's toolbox,
-one has to pick the right tool for the job; you
-can't repair a car using just a screwdriver ;)
+I think of a programming language is just a tool in one's toolbox.
+You just have to pick the right tool for the job.
 
 Always experimenting, always learning, never bored.
