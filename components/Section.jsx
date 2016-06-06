@@ -17,7 +17,7 @@ export class Section extends React.Component{
     this.elementBox=node.getBoundingClientRect();
     this.elementHeight = node.clientHeight;
   }
-  
+
   componentWillUpdate(){
     var node = ReactDOM.findDOMNode(this);
     // elementBox = this.props.node.getBoundingClientRect();
@@ -28,7 +28,7 @@ export class Section extends React.Component{
 
     let url = Navigator.genURL(this.props.section_name || this.props.parentName);
 
-    if(this.elementBox.top<=0  && this.elementBox.bottom>=0 && location.hash!==url){
+    if(this.elementBox.top<=0  && this.elementBox.bottom>0 && location.hash!==url){
       Navigator.setURL(this.props.section_name || this.props.parentName)
 
       // history.replaceState(null, null, urlId);

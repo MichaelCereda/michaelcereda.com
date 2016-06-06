@@ -49,6 +49,13 @@ export class Project extends React.Component{
     let { url } = this.props.data;
 
     if(url) {
+      ga('send', 'event', {
+        eventCategory: 'Outbound Link',
+        eventAction: 'click',
+        eventLabel: url,
+        transport: 'beacon'
+      });
+
       var win = window.open(url, '_blank');
       win.focus();
         return ;

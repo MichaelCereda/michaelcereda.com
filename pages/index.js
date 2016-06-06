@@ -28,7 +28,7 @@ import 'css/zenburn.css'
 export default class Index extends React.Component {
   constructor(props){
     super(props);
-    debugger;
+    
     this.sortedPages = _.sortBy(props.route.pages,
       (page) => access(page, 'data.date')
     ).reverse()

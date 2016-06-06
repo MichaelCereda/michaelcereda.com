@@ -93,7 +93,7 @@ class Navigator {
   static scrollTo(section_name){
 
     return new Promise((resolve,reject)=>{
-
+      if(!section_name.trim()) resolve();
       var endlocation = window.pageYOffset
                         + document.getElementById(section_name).getBoundingClientRect().top
                         + 1;
