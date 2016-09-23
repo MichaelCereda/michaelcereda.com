@@ -9,6 +9,15 @@ I wrote some posts on my blog about the making of this website, if you're curiou
 
 Or if you want to see it in action: http://michaelcereda.com
 
+# Run the code 
+```
+npm install
+
+npm run dev
+```
+
+
+
 #License
 Everything except "content files" (Images, md/text files containing  informations, etc) can be used for learning purposes.
 If you have any question just contact me :)
