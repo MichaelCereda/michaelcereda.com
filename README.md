@@ -15,6 +15,7 @@ npm install
 
 npm run dev
 ```
+The app will be available at localhost:8000
 
 
 
