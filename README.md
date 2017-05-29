@@ -11,10 +11,10 @@ Or if you want to see it in action: http://michaelcereda.com
 
 # Install
 
-git clone https://github.com/groninge01/michaelcereda.com.git
-mkdir node_modules
-yarn add gatsby
-yarn install
+- git clone https://github.com/groninge01/michaelcereda.com.git
+- mkdir node_modules
+- yarn add gatsby
+- yarn install
 
 
 #License
