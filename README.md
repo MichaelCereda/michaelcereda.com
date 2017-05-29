@@ -11,11 +11,11 @@ Or if you want to see it in action: http://michaelcereda.com
 
 # Install
 
-git clone ..
+git clone https://github.com/groninge01/michaelcereda.com.git
 mkdir node_modules
 yarn add gatsby
-yarn Install
-..
+yarn install
+
 
 #License
 Everything except "content files" (Images, md/text files containing  informations, etc) can be used for learning purposes.
