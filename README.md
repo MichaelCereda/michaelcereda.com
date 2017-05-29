@@ -17,6 +17,6 @@ Or if you want to see it in action: http://michaelcereda.com
 - yarn install
 
 
-#License
+# License
 Everything except "content files" (Images, md/text files containing  informations, etc) can be used for learning purposes.
 If you have any question just contact me :)
