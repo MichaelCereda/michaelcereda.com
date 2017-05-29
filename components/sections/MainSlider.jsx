@@ -48,7 +48,7 @@ MainSlider.styles = {
   container:{
     position: 'relative',
 
-    background:'url(../assets/me.jpg)',
+    background:'url(assets/me.jpg)',
     backgroundRepeat: 'no-repeat',
     backgroundSize:'cover'
   },
