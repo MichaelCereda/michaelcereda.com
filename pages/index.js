@@ -4,7 +4,8 @@ import { prefixLink } from 'gatsby-helpers'
 import _ from 'lodash';
 import access from 'safe-access';
 import {Menu} from '../components/Menu.jsx'
-import {MainSlider, ProjectList, AboutMe, Contact, Medium, Footer} from '../components/sections';
+//import {MainSlider, ProjectList, AboutMe, Contact, Medium, Footer} from '../components/sections';
+import {MainSlider, ProjectList, AboutMe, Contact, Footer} from '../components/sections';
 
 import {Navigator} from '../utils/navigator.js';
 import mobilecheck from '../utils/mobilecheck.js';
@@ -28,7 +29,7 @@ import 'css/zenburn.css'
 export default class Index extends React.Component {
   constructor(props){
     super(props);
-    
+
     this.sortedPages = _.sortBy(props.route.pages,
       (page) => access(page, 'data.date')
     ).reverse()
@@ -137,21 +138,21 @@ export default class Index extends React.Component {
             {... this.state }
             {...this.pageGroups.root.about_me.data} />
         },
+//        {
+//          section: 'medium',
+//          component: <Medium
+//            icon='book-open'
+//              className='color-four'
+//              {... this.state }/>
+//          },
         {
-          section: 'medium',
-          component: <Medium
-            icon='book-open'
-              className='color-four'
-              {... this.state }/>
-          },
-          {
-            section: 'contact',
-            component: <Contact
-                className='color-five contact'
-                {... this.state }
-                {...this.pageGroups.root.contact.data}
-                icon='envelope'/>
-            },
+        section: 'contact',
+        component: <Contact
+            className='color-five contact'
+            {... this.state }
+            {...this.pageGroups.root.contact.data}
+            icon='envelope'/>
+        },
 
       ];
       Navigator.load(sitemap);
