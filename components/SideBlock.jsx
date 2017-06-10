@@ -34,10 +34,16 @@ import ReactDOM from 'react-dom';
 
        let isCurrent = this.props.elementBox && this.props.elementBox.top!==undefined
        && (
-         this.props.elementBox.top <=0
+         this.props.elementBox.top <-1
          && this.props.elementHeight+this.props.elementBox.top>=0
          && this.props.elementHeight != this.props.windowHeight
        );
+       console.log("elementBox: ", this.props.elementBox);
+       console.log(this.props.elementBox.top);
+       console.log(this.props.elementHeight);
+       console.log(this.props.windowHeight);
+       console.log("isCurrent: ", isCurrent);
+
        let isAtEnd = this.props.elementBox && this.props.elementBox.bottom<this.props.windowHeight;
 
 

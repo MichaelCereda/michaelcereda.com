@@ -9,6 +9,14 @@ I wrote some posts on my blog about the making of this website, if you're curiou
 
 Or if you want to see it in action: http://michaelcereda.com
 
-#License
+# Install
+
+- git clone https://github.com/groninge01/michaelcereda.com.git
+- mkdir node_modules
+- yarn add gatsby
+- yarn install
+
+
+# License
 Everything except "content files" (Images, md/text files containing  informations, etc) can be used for learning purposes.
 If you have any question just contact me :)

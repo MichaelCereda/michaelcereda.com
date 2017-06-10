@@ -45,10 +45,13 @@ export class Menu extends React.Component{
       return <div
         className='menu-item'
         style={styles.link} key={i}
+        //onClick={(section_name=>(e)=>{
+        //  Navigator.scrollTo(section_name);
+        //  e.preventDefault();
+        //})(item.section)}
         onClick={(section_name=>(e)=>{
-          Navigator.scrollTo(section_name);
-          e.preventDefault();
-        })(item.section)}
+          document.getElementById(section_name).scrollIntoView();
+          })(item.section)}
         >
           <i className={'icon-'+item.component.props.icon}/>
 
@@ -56,7 +59,7 @@ export class Menu extends React.Component{
     });
 
     return <Motion defaultStyle={{x: styles.container.height}}
-      style={{x: spring((this.state.isOpen)? this.props.sections.length*52 : styles.container.height, presets.wobbly)}}>
+      style={{x: spring((this.state.isOpen)? this.props.sections.length*56 : styles.container.height, presets.wobbly)}}>
       {value =>
         <div
           style={{
@@ -102,7 +105,7 @@ Menu.styles = {
     position:'fixed',
     top: 20, left: 20,
     zIndex: 20,
-    boxShadow: '5px 5px 10px rgba(24, 24, 24, 0.50)',
+    //boxShadow: '5px 5px 10px rgba(24, 24, 24, 0.50)',
     padding: 15,
     paddingTop: 15,
     display: 'flex',
